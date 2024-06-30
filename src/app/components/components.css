@@ -1,0 +1,253 @@
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform:     translateY(-30px);
+        transform:         translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform:     translateY(-15px);
+        transform:         translateY(-15px)
+    }
+}
+
+.cont {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    height: 40px;
+    width: 280px;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+/* Hover on Input */
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* styling of Input */
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+.input::placeholder {
+    color: #C8C8C8;
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 0 20px 30px -6px rgba(00, 00, 00, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.card {
+    width: 360px;
+    height: 350px;
+    padding: .8em;
+    border-radius: .5rem;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.card-img {
+    position: relative;
+    background-color: black;
+    height: 181.75px;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+    /*PRODUCT ITEM*/
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+/*Hover*/
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card:hover .card-button {
+    animation-delay: 800ms;
+    -moz-animation-delay: 800ms;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: white;
+    animation: none;
+    -moz-animation: none;
+}
+
+.card-button:active {
+    opacity: 0.45;
+    border: 2px solid black;
+}
+
+@keyframes loader_5191 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.square {
+    background: #ddd;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+#sq1 {
+    margin-top: -25px;
+    margin-left: -25px;
+    animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+}
+
+#sq2 {
+    margin-top: -25px;
+    animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+}
+
+#sq3 {
+    margin-top: -25px;
+    margin-left: 15px;
+    animation: loader_5191 675ms ease-in-out 150ms infinite;
+}
+
+#sq4 {
+    margin-left: -25px;
+    animation: loader_5191 675ms ease-in-out 225ms infinite;
+}
+
+#sq5 {
+    animation: loader_5191 675ms ease-in-out 300ms infinite;
+}
+
+#sq6 {
+    margin-left: 15px;
+    animation: loader_5191 675ms ease-in-out 375ms infinite;
+}
+
+#sq7 {
+    margin-top: 15px;
+    margin-left: -25px;
+    animation: loader_5191 675ms ease-in-out 450ms infinite;
+}
+
+#sq8 {
+    margin-top: 15px;
+    animation: loader_5191 675ms ease-in-out 525ms infinite;
+}
+
+#sq9 {
+    margin-top: 15px;
+    margin-left: 15px;
+    animation: loader_5191 675ms ease-in-out 600ms infinite;
+}

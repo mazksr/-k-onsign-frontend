@@ -1,0 +1,107 @@
+.btnnn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.btnnn {
+    width: 144px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 0 20px 30px -6px rgba(00, 00, 00, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.btnnn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btnnn:active {
+    opacity: 0.5;
+}
+
+.radio-input input {
+    display: none;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question {
+    color: rgb(49, 49, 49);
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.steps {
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+}
+
+.radio-input  label {
+    display: flex;
+    background-color: #fff;
+    padding: 14px;
+    margin: 8px 0 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(187, 187, 187, 0.164);
+    color: #000;
+    transition: .3s ease;
+}
+
+.radio-input  label:hover {
+    background-color: rgba(24, 24, 24, 0.13);
+    border: 1px solid #bbb;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    display: none;
+    transition: display .4s ease;
+}
+
+.result.success {
+    color: green;
+}
+
+
+.radio-input input:checked + label {
+    border-color: rgb(22, 245, 22);
+    color: rgb(16, 184, 16);
+}
+
+.radio-input:checked .result.success {
+    display: flex;
+}
+

@@ -1,0 +1,51 @@
+
+.btnn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.btnn {
+    width: 144px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 0 20px 30px -6px rgba(00, 00, 00, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.btnn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btnn:active {
+    opacity: 0.5;
+}
+
+.cancel {
+    margin-right: 6px;
+    color: #090909;
+    padding: 0.005em 0.25em;
+    font-size: 18px;
+    border-radius: 2.0em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.cancel:hover {
+    border: 1px solid white;
+}
+
+.cancel:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
